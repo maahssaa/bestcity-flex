@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Samim';
+    src: url('../fonts/samim/Samim.eot');
+    src: url('../fonts/samim/Samim.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/samim/Samim.woff2') format('woff2'),
+         url('../fonts/samim/Samim.woff') format('woff'),
+         url('../fonts/samim/Samim.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Samim';
+    src: url('../fonts/samim/Samim-Bold.eot');
+    src: url('../fonts/samim/Samim-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/samim/Samim-Bold.woff2') format('woff2'),
+         url('../fonts/samim/Samim-Bold.woff') format('woff'),
+         url('../fonts/samim/Samim-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Samim';
+    src: url('../fonts/samim/Samim-Medium.eot');
+    src: url('../fonts/samim/Samim-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/samim/Samim-Medium.woff2') format('woff2'),
+         url('../fonts/samim/Samim-Medium.woff') format('woff'),
+         url('../fonts/samim/Samim-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+body {
+    direction: rtl;
+    margin: 0;
+    font-family: 'Samim';
+}
+a {
+    text-decoration: none;
+}
+ul , ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: fff;
+    padding: 4px 0px;
+}
+.header .name-and-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .name-and-menu-header .name-header a {
+    color: #093a58;
+    display: block;
+    padding: 5px;
+}
+.header .name-and-menu-header .menu-header ul {
+    display: flex;
+    justify-content: space-between;
+}
+.header .name-and-menu-header .menu-header ul li a {
+    color: #3acec2;
+    display: block;
+    padding: 5px 20px;
+}
+.header .name-and-menu-header .menu-header ul li a:hover {
+    color: #093a58;
+}
+.hero-section {
+    background-color: #3acec2;
+    color: fff;
+    text-align: center;
+    padding: 147px 0 45px 0;
+}
+.hero-section img {
+    width: 190px;
+    height: auto;
+}
+.hero-section h1 {
+    margin: 0;
+    margin: 25px 0px 5px 0px;
+}
+.hero-section p {
+    margin: 0;
+    font-size: 20px;
+}
+.content {
+    background-color: fff;
+}
+.content .columns-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.content .columns-container p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.content .columns-container .column-1,
+.content .columns-container .column-3 {
+    width: 30%;
+}
+.content .columns-container .column-2 {
+    width: 40%;
+}
+.content .columns-container .column-2 .image-and-text {
+    position: relative;
+}
+
+.content .columns-container .column-2 .image-and-text img{
+    display: block;
+    width: 100%;
+}
+.content .columns-container .column-2 .image-and-text .text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    color: fff;
+    background-color: rgba(19, 43, 102, 0.85);
+    padding: 10px;
+    line-height: 15px;
+    font-size: 12px;
+}
+.content .columns-container .column-2 .image-and-text .text span{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}
+.content .columns-container .column .headers {
+    color: #093a58;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 17px;
+}
+.footer {
+    text-align: center;
+    background-color: #d9e4ea;
+    padding: 30px 0;
+}
+.footer p {
+    margin: 0;
+}
+@media (max-width:1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+@media (max-width:1020px) {
+    .content .columns-container {
+        gap: 0;
+        flex-wrap: wrap;
+    }
+    .content .columns-container .column-1,
+    .content .columns-container .column-2 {
+        width: 50%;
+    }
+    .content .columns-container .column-3 {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+@media (max-width:990px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (max-width:710px) {
+    .header .name-and-menu-header {
+       justify-content:center;
+}
+}
+
+
+
+
